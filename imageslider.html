@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Image Slider</title>
+    <style>
+        .aboutslider {
+            position: relative;
+            height: 550px;
+            width: 600px;
+            margin: 100px auto;
+            background-color: rgb(185, 183, 183);
+            overflow: hidden;
+        }
+        .about {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .s1 {
+            margin-top: 30px;
+            box-sizing: border-box;
+        }
+        img {
+            width: 370px;
+            height: 450px;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+         .button{
+            display: flex;
+            font-size: 30px;
+            margin-left: 300px;
+            column-gap: 30px;
+            margin-top: 10px;
+         }
+      
+    </style>
+</head>
+<body>
+    <div class="aboutslider">
+        <div class="about">
+            <div class="s1"><img src="images/WhatsApp Image 2024-08-30 at 14.24.50_67cdc570.jpg" alt="Slide 1"></div>
+            <div class="s1"><img src="images/WhatsApp Image 2024-08-30 at 14.24.50_67e07657.jpg" alt="Slide 2"></div>
+            <div class="s1"><img src="images/WhatsApp Image 2024-08-30 at 14.24.50_74751e16.jpg" alt="Slide 3"></div>
+            <div class="s1"><img src="images/WhatsApp Image 2024-08-30 at 14.24.50_7663f3bd.jpg" alt="Slide 4"></div>
+            <div class="s1"><img src="images/WhatsApp Image 2024-08-30 at 14.24.50_e37b82a1.jpg" alt="Slide 5"></div>
+        </div>
+       <div class="button">
+        <div class="btn" onclick="prevSlide()"> 
+            <i class="fa-solid fa-circle-arrow-left"></i>
+        </div>
+        <div class="btn1" onclick="nextSlide()"> 
+            <i class="fa-solid fa-circle-arrow-right"></i>
+        </div>
+       </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelector('.about');
+            const totalSlides = document.querySelectorAll('.s1').length;
+            if (index >= totalSlides) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = totalSlides - 1;
+            } else {
+                currentIndex = index;
+            }
+            slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+    </script>
+</body>
+</html>

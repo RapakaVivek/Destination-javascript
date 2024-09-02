@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-heading{
+    text-align: center;
+    font: weight 700px;
+    font-size:50px;
+}
+
+.contact-text{
+    text-align: center;
+    font: weight 200px;
+    
+}
+.tag{
+    display: flex;
+    background-color: rgb(8, 8, 8);
+    height:160px;
+    width:1100px;
+    align-items: center;
+    margin-left:100px;
+    margin-top:100px;
+    position: absolute;   
+}
+.tag img{
+    margin-left:70px;
+}
+
+.loc{
+    display: flex;
+     color: rgb(255, 255, 255);
+     margin-left:40px;
+    
+}
+.loc i{
+    font-size:24px;
+    margin-top:11px;
+    margin-right:17px;
+}
+.loc1{
+    color: rgb(255, 255, 255);
+
+}
+.line{
+    height:70px;
+    width:1px;
+    background-color:white;
+    margin-left:40px;
+}
+
+.container {
+            
+    padding: 20px;
+    border-radius: 8px;
+    width:500px;
+    padding-top:100px;
+    padding-left:100px;
+    
+}
+.container h1{
+    font-size:70px;
+    color: rgb(125, 125, 255);
+    margin-left:10px;
+    
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color:white;
+}
+.form-group input, .form-group textarea {
+    width: 600px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: rgb(41, 34, 34);
+    color: #ffffff;
+}
+.form-group textarea {
+    resize: none;
+}
+.submit-btn {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+#thank-you-message {
+    display: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: #007BFF;
+    text-align: center;
+    padding-top:10px;
+    height:50px;
+    width:500px;
+}
+.for{
+    display: flex;
+    margin-top:200px;
+    
+    
+}
+.for1{
+    background-color: rgb(41, 34, 34);
+    height:600px;
+    width:800px;
+}
+.cat{
+    display: flex;
+    margin-top:100px;
+    margin-left:10px;
+}
+.cat1{
+
+    padding:20px;
+}
+
+
+.FAQ-heading1 h1{
+    font-family:  Arial, Helvetica, sans-serif;;
+    font-size: 26px;
+    font-weight:100;
+    padding:20px;
+} 
+.FAQ-heading1 p{
+    font-size: 16px;
+    font-family:   sans-serif;
+}
+.FAQ-heading1 i{
+    padding-left: 100px;
+}
+.FAQ-heading2 h1{
+    font-family:  Arial, Helvetica, sans-serif;;
+    font-size: 26px;
+    font-weight:100;
+    padding:20px;
+} 
+.FAQ-heading2 p{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.FAQ-heading2 i{
+    padding-left: 220px;
+}
+.FAQ-heading3 h1{
+    font-family:  Arial, Helvetica, sans-serif;;
+    font-size: 26px;
+    font-weight:100;
+    padding:20px;
+} 
+.FAQ-heading3 p{
+    font-size: 16px;
+    font-family:   sans-serif;
+}
+.FAQ-heading3 i{
+    padding-left: 100px;
+}
+.FAQ-heading4 h1{
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 26px;
+    font-weight:100;
+    padding:20px;
+} 
+.FAQ-heading4 p{
+    font-size: 16px;
+    
+    font-family: sans-serif;
+}
+.FAQ-heading4 i{
+    padding-left: 86px;
+}
+.FAQ-heading5 h1{
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 26px;
+    font-weight:100;
+    padding:20px;
+} 
+.FAQ-heading5 p{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.FAQ-heading5 i{
+    padding-left: 75px;
+}
+
+.mrq{
+    background-color: black;
+    height:900px;
+    width:1400px;
+    margin-top:100px;
+}
+.mrq h1{
+    color: #ffffff;
+    font-size:80px;
+    text-align: center;
+    padding-top:150px;
+    
+    
+}
+.mrq1{
+    padding-top:50px;
+    
+}
+.mrq .btn{
+    background: none;
+    border-color: #ffffff;
+    color: #ffffff;
+    padding:10px;
+    text-align: center; 
+}
+
+
+.newsletter{
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    column-gap:350px;
+}
+.news1{
+    margin-top: 20px;
+}
+.news1 h1{
+    color: white;
+    background-color: black;
+    width: 250px;
+    text-align: center;
+}
+.news1 p{
+    font-size: 20px;
+    margin-top: 30px;           
+}
+.news2 p{
+    font-size: 20px;
+    margin-top: 20px; 
+}
+.news2 input{
+    height: 60px;
+    width: 200px;
+    font-size: 15px;
+}
+button{
+    padding: 20px 15px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+button:hover{
+    color: black;
+    background-color: white;
+}
+    </style>
+
+</head>
+<body>
+    <div class="contact-heading">
+                     <h1>Contact Us</h1>
+    </div>
+        <div class="contact-text">
+                     <h3>Whether you have a question about services, prices, need a any other details please contact us<br>
+                     using the form and t he other information on this page.</h3>
+        </div>
+
+             <div class="tag">
+                <div class="img">
+                     <img src="images1/tr1.jpg">
+                </div>
+                    <div class="loc">
+                        <i class="fa-solid fa-location-pin"></i>
+                    
+                <div class="loc1">
+                    <h3>5201 Elm Street, 4th Avenue,<br>
+                         Cedar Lane Main, USA.</h3>
+                    </div>
+                </div>
+            <div class="line">
+
+            </div>
+            <div class="loc">
+                <i class="fa-solid fa-phone"></i>
+            
+        <div class="loc1">
+            <h3>+911234567890<br>
+                +9100987654321</h3>
+        </div>
+        </div>
+    <div class="line">
+        
+    </div>
+    <div class="loc">
+        <i class="fa-solid fa-envelope"></i>
+    
+<div class="loc1">
+    <h3>Trav@gmail.com<br>
+        Kushi@gmail.com</h3>
+</div>
+</div>
+           </div>
+        
+    <div class="for">
+        <div class="for1">
+            <div class="container">
+                <h1>Get in touch</h1>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+                <div id="thank-you-message">Thank you! Your submission has been received.</div>
+            </div>
+        </div>
+        <img src="images1/tr89.jpg" height="600px" width="500px">
+    </div>
+
+    <div class="cat">
+      
+        <img src="images1/WhatsApp Image 2024-08-30 at 09.54.59_b986b92c.jpg" height="250px" width="500px">
+        <div class="cat1">
+            <div class="FAQ">
+                <div class="FAQ-heading1">
+                    <h1>Resort suitable for families with children?
+                        <i class="fa-solid fa-plus icon"></i>
+                    </h1>
+                    <p style="display: none;" class="FAQtext">To cater to our young customers, our resort is family-friendly and provides services<br>
+                         such as kids' clubs, playgrounds, and family-oriented activities.</p>
+                </div>
+                <div class="FAQ-heading2">
+                    <h1>Are pets allowed at the resort?
+                        <i class="fa-solid fa-plus icon"></i>
+                    </h1>
+                    <p style="display: none;" class="FAQtext">In order to preserve a peaceful and comfortable environment, we have<br>
+                         implemented a pet policy that prohibits normal pets from entering the premises.</p>
+                </div>
+                <div class="FAQ-heading3">
+                    <h1>What is the check-in and check-out time?
+                        <i class="fa-solid fa-plus icon"></i>
+                    </h1>
+                    <p style="display: none;" class="FAQtext">The check-in and check-out times are both at [time]. Early or late check-in is <br>
+                        possible upon request and subject to availability.</p>
+                </div>
+                <div class="FAQ-heading4">
+                    <h1>Excursions or activities through the resort?
+                        <i class="fa-solid fa-plus icon"></i>
+                    </h1>
+                    <p style="display: none;" class="FAQtext">Dedicated concierge service to assist you in organising various excursions and<br>
+                         activities to see the area sites.</p>
+                </div>
+                <div class="FAQ-heading5">
+                    <h1>How can I make a reservation at the resort?
+                        <i class="fa-solid fa-plus icon"></i>
+                    </h1>
+                    <p style="display: none;" class="FAQtext">You may book directly through our website, by phone, or by contacting your<br>
+                         chosen travel agent. We want to welcome you to our resort soon!.</p>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+        <div class="mrq">
+            <h1>Explore Our Gallery's</h1>
+            <div class="mrq1">
+            <marquee>
+            <img src="images1/tr5.jpg"  height="300px" width="400px">
+            <img src="images1/tr6.jpg"  height="300px" width="400px">
+            <img src="images1/tr4.jpg"  height="300px" width="400px">
+            <img src="images1/tr7.jpg"  height="300px" width="400px">
+            <img src="images1/tr8.jpg"  height="300px" width="400px">
+            <img src="images1/tr9.jpg"  height="300px" width="400px">
+            <img src="images1/tr5.jpg"  height="300px" width="400px">
+            <img src="images1/tr6.jpg"  height="300px" width="400px">
+            <img src="images1/tr4.jpg"  height="300px" width="400px">
+            <img src="images1/tr7.jpg"  height="300px" width="400px">
+            <img src="images1/tr8.jpg"  height="300px" width="400px">
+            <img src="images1/tr9.jpg"  height="300px" width="400px">
+        </marquee>
+             </div>
+             <btn>
+             <button>Explore Rooms</button><button>Our services</button>
+             </btn>
+        </div>
+        <div class="newsletter">
+            <div class="news1">
+                <h1>DESTIN FLOW</h1>
+                <p>We provide travelers with a variety of amenities and <br>services tailored to
+                     meet their every need, assuring a<br> comfortable and enjoyable stay.</p>
+            </div>
+            <div class="news2">
+                <h1>Subscribe to our newsletter</h1>
+                <p>click here for the email newsletter form.</p>
+                <input type="email" id="input" placeholder="Please Enter Your Email">
+                <button id="btn">Subscribe</button>
+            </div>
+        </div>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting the usual way
+    document.getElementById('contact-form').style.display = 'none'; // Hide the form
+    document.getElementById('thank-you-message').style.display = 'block'; // Show the thank you message
+});
+
+var icons = document.querySelectorAll(".icon");
+   var texts = document.querySelectorAll(".FAQtext");
+
+   icons.forEach(function(icon, index) {
+       icon.addEventListener("click", function() {
+           if (texts[index].style.display === "none") {
+               texts[index].style.display = "block";
+               icon.classList.remove("fa-plus");
+               icon.classList.add("fa-minus");
+           } else {
+               texts[index].style.display = "none";
+               icon.classList.remove("fa-minus");
+               icon.classList.add("fa-plus");
+           }
+       });
+   });
+
+   let input = document.getElementById("input");
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click", function() {
+    input.value = "Thank you! Your submission has been received!";
+    input.style.width = "400px";
+    input.style.backgroundColor = " rgb(77, 140, 182)";
+    input.style.fontSize = "16px";
+    input.style.textAlign = "center";
+    btn.style.display = "none";
+    input.style.color ="white";
+});
+  </script>
+</body>
+</html>

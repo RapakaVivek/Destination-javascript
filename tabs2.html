@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="rooms.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Cormorant Garamond",sans-serif;
+    font-family: "Alegreya Sans", sans-serif;
+    color: black;
+
+
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(150px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+.banner{
+    width: 100%;
+    height: 551px;
+    background-image: url(images/hero_img.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.banner_subtittle p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 167px;
+    height: 44px;
+    color: black;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    background-color: #ffffff99;
+    border-radius: 30px;
+    font-size: 14px;
+    animation: fade-up 1s;
+   
+}
+
+.banner_tittle{
+    color: white;
+    font-family: "Cormorant Garamond",sans-serif;
+    font-size: 120px;
+    margin: 10px 0px;
+    animation: fade-up 1s;
+}
+.content1{
+    display: flex;
+    margin-top: 100px;
+}
+.content11{
+    background-image:url(https://cdn.prod.website-files.com/646dc5789befdc07ef4ed24d/646dc5c5024f9988ecd6e02d_room-image-1.jpg);
+    height: 650px;
+ width: 550px;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.content111{
+    background-image:url(https://cdn.prod.website-files.com/646dc5789befdc07ef4ed24d/646dc67d08ab190080a9e53c_room-image-4.jpg);
+    height: 650px;
+ width: 550px;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.content112{
+    background-image:url(https://cdn.prod.website-files.com/646dc5789befdc07ef4ed24d/646dc6b02bb197206726176d_room-image-5.jpg);
+    height: 650px;
+ width: 550px;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.content_card{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    opacity: 0;
+    margin-top: 150px;
+    padding: 70px;
+}
+.content_card:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.content_card p{
+   margin-top: 50px;
+   font-size: 30px;
+   padding: 15px;
+   font-weight: 500;
+}
+.content1_1{
+    width: 40%;
+    margin: 30px;
+    margin-left: 60px;
+}
+.content1_2{
+    width: 40%;
+    margin: 30px;
+    margin-left: 50px;
+}
+.content1_1 h3{
+    font-family: Cormorant Garamond, sans-serif;
+    font-size: 40px;
+}
+.content1_1 p{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.content1_11{
+    display: flex;
+}
+.content1_11 p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.content1_11 button{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 250px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+.content12{
+    background-image:url(https://cdn.prod.website-files.com/646dc5789befdc07ef4ed24d/646dc67d08ab190080a9e53c_room-image-4.jpg);
+    height: 650px;
+ width: 550px;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.content122{
+    background-image:url(https://cdn.prod.website-files.com/646dc5789befdc07ef4ed24d/646dc60128c11bc7c6e07bfd_room-image-2.jpg);
+    height: 650px;
+ width: 550px;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.content1_2 h3{
+    font-family: Cormorant Garamond, sans-serif;
+    font-size: 40px;
+}
+.content1_2 p{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.content1_21{
+    display: flex;
+}
+.content1_21 p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.content1_21 button{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 250px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+
+.content2{
+    display: flex;
+    margin-top: 50px;
+}
+.content2_1{
+    width: 40%;
+    margin: 30px;
+    margin-left: 60px;
+}
+.content2_2{
+    width: 40%;
+    margin: 30px;
+    margin-left: 50px;
+}
+.content21{
+    background-image:url(https://cdn.prod.website-files.com/646dc5789befdc07ef4ed24d/646dc60128c11bc7c6e07bfd_room-image-2.jpg);
+    height: 650px;
+ width: 550px;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.content2_1 h3{
+    font-family: Cormorant Garamond, sans-serif;
+    font-size: 40px;
+}
+.content2_1 p{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.content2_11{
+    display: flex;
+}
+.content2_11 p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.content2_11 button{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 250px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+   .content22{
+    background-image:url(https://cdn.prod.website-files.com/646dc5789befdc07ef4ed24d/646dc63fc3a40938a4449990_room-image-3.jpg);
+    height: 650px;
+ width: 550px;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.content2_2 h3{
+    font-family: Cormorant Garamond, sans-serif;
+    font-size: 40px;
+}
+.content2_2 p{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.content2_21{
+    display: flex;
+}
+.content2_21 p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.content2_21 button{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 250px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.content3{
+    display: flex;
+    margin-top: 50px;
+}
+.content3_1{
+    width: 40%;
+    margin: 30px;
+    margin-left: 60px;
+}
+.content3_2{
+    width: 40%;
+    margin: 30px;
+    margin-left: 50px;
+}
+.content31{
+    background-image:url(https://cdn.prod.website-files.com/646dc5789befdc07ef4ed24d/646dc6e1d8a3d092c086f6c6_room-image-6.jpg);
+    height: 650px;
+ width: 550px;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.content3_1 h3{
+    font-family: Cormorant Garamond, sans-serif;
+    font-size: 40px;
+}
+.content3_1 p{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.content3_11{
+    display: flex;
+}
+.content3_11 p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.content3_11 button{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 250px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+   .content32{
+    background-image:url(https://cdn.prod.website-files.com/646dc5789befdc07ef4ed24d/646dc6b02bb197206726176d_room-image-5.jpg);
+    height: 650px;
+ width: 550px;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+.content3_2 h3{
+    font-family: Cormorant Garamond, sans-serif;
+    font-size: 40px;
+}
+.content3_2 p{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.content3_21{
+    display: flex;
+}
+.content3_21 p{
+    margin-top: 15px;
+    font-size: 25px;
+}
+.content3_21 button{
+    height: 50px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 250px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+.content4{
+    background-image: url(images/content4.jpg);
+    height: 700px;
+    width: 100%;
+    margin-top: 40px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.content4_1{
+    background-color: white;
+    opacity: 0.7;
+    margin-left: 500px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-right: 30px;
+}
+.content4_1 h2{
+    font-size: 50px;
+}
+.content4_1 p{
+    font-size: 20px;
+}
+.content4_1 button{
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+.content5{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+.content5 h1{
+    color: white;
+    font-size: 80px;
+    margin-left: 300px;
+}
+.content5 img{
+    height: 300px;
+    width: 500px;
+    margin-left: 40px;
+}
+.content5 button{
+    margin-left: 10px;
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    border: 1px solid black;
+    font-size: 16px;
+}
+#btn1{
+    margin-left: 500px;
+    margin-top: 20px;
+    border: 1px solid white;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+.newsletter{
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    column-gap:350px;
+}
+.news1{
+    margin-top: 20px;
+}
+.news1 h1{
+    color: white;
+    background-color: black;
+    width: 250px;
+    text-align: center;
+}
+.news1 p{
+    font-size: 20px;
+    margin-top: 30px;           
+}
+.news2 p{
+    font-size: 20px;
+    margin-top: 20px; 
+}
+.news2 input{
+    height: 60px;
+    width: 200px;
+    font-size: 15px;
+}
+button{
+    padding: 20px 15px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+button:hover{
+    color: black;
+    background-color: white;
+}
+.tab2{
+    display:none ;
+}
+.tab3{
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner_subtittle">
+            <p> Glorious Hotel</p>
+        </div>
+        <h1 class="banner_tittle">Rooms & Feature</h1>
+    </div>
+
+
+    <div class="home-container1">
+        <div class="home-buttons">
+           <button class="bt1">Latest</button>
+           <button class="bt2">Popular</button>
+           <button class="bt3">Featured</button>
+        </div>
+       </div>
+
+
+
+    <div class="tab1">
+    <div class="content1">
+        <div class="content1_1">
+            <div class="content11">
+                <div class="content_card">
+                    <p> 60m² (inc. terrace)</p><hr>
+                    <p> 4 adults / 1 child</p><hr>
+                    <p> Bunk Bed</p><hr>
+                    <p>Ocean View</p>
+                </div>
+            </div>
+            <h3>Double Room</h3>
+            <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+            <hr>
+            <div class="content1_11">
+                <p>$ 320.00 USD</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+        <div class="content1_2">
+            <div class="content12">
+                <div class="content_card">
+                    <p> 60m² (inc. terrace)</p><hr>
+                    <p> 4 adults / 1 child</p><hr>
+                    <p> Bunk Bed</p><hr>
+                    <p>Ocean View</p>
+                </div>
+            </div>
+            <h3>Classic Room</h3>
+            <p>Classic Rooms provide a delightful refuge for those look for a combination of luxury & leisure.</p>
+            <hr>
+            <div class="content1_21">
+                <p>$ 320.00 USD</p>
+                <button>Book Now</button>
+            </div>
+        </div></div>
+        <div class="content2">
+            <div class="content2_1">
+                <div class="content21">
+                    <div class="content_card">
+                        <p> 60m² (inc. terrace)</p><hr>
+                        <p> 4 adults / 1 child</p><hr>
+                        <p> Bunk Bed</p><hr>
+                        <p>Ocean View</p>
+                    </div>
+                </div>
+                <h3>Luxury Room</h3>
+                <p>Luxury Rooms are precisely built to create a refuge of richness & comfort in the midst of paradise.</p>
+                <hr>
+                <div class="content2_11">
+                    <p>$ 320.00 USD</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+            <div class="content2_2">
+                <div class="content22">
+                    <div class="content_card">
+                        <p> 60m² (inc. terrace)</p><hr>
+                        <p> 4 adults / 1 child</p><hr>
+                        <p> Bunk Bed</p><hr>
+                        <p>Ocean View</p>
+                    </div>
+                </div>
+                <h3>Premium Room</h3>
+                <p>Premium Rooms, created with discriminating travelers in mind, are a tribute to sophisticated living.</p>
+                <hr>
+                <div class="content2_21">
+                    <p>$ 320.00 USD</p>
+                    <button>Book Now</button>
+                </div>
+            </div></div>
+            <div class="content3">
+                <div class="content3_1">
+                    <div class="content31">
+                        <div class="content_card">
+                            <p> 60m² (inc. terrace)</p><hr>
+                            <p> 4 adults / 1 child</p><hr>
+                            <p> Bunk Bed</p><hr>
+                            <p>Ocean View</p>
+                        </div></div>
+                    <h3>Single Room</h3>
+                    <p>Single Rooms provide a secluded and serene haven for single travellers seeking tranquilly & renewal.</p>
+                    <hr>
+                    <div class="content3_11">
+                        <p>$ 320.00 USD</p>
+                        <button>Book Now</button>
+                    </div>
+                </div>
+                <div class="content3_2">
+                    <div class="content32">
+                        <div class="content_card">
+                            <p> 60m² (inc. terrace)</p><hr>
+                            <p> 4 adults / 1 child</p><hr>
+                            <p> Bunk Bed</p><hr>
+                            <p>Ocean View</p>
+                        </div></div>
+                    <h3>Budget Room</h3>
+                    <p>Relax on comfy sleep & take use of contemporary comforts tailored to meet your travel requirements.</p>
+                    <hr>
+                    <div class="content3_21">
+                        <p>$ 320.00 USD</p>
+                        <button>Book Now</button>
+                    </div>
+                </div></div>
+                </div>
+
+
+
+                <div class="tab2">
+                    <div class="content1">
+                        <div class="content1_1">
+                            <div class="content111">
+                                <div class="content_card">
+                                    <p> 60m² (inc. terrace)</p><hr>
+                                    <p> 4 adults / 1 child</p><hr>
+                                    <p> Bunk Bed</p><hr>
+                                    <p>Ocean View</p>
+                                </div>
+                            </div>
+                            <h3>Double Room</h3>
+                            <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                            <hr>
+                            <div class="content1_11">
+                                <p>$ 320.00 USD</p>
+                                <button>Book Now</button>
+                            </div>
+                        </div>
+                        <div class="content1_2">
+                            <div class="content122">
+                                <div class="content_card">
+                                    <p> 60m² (inc. terrace)</p><hr>
+                                    <p> 4 adults / 1 child</p><hr>
+                                    <p> Bunk Bed</p><hr>
+                                    <p>Ocean View</p>
+                                </div>
+                            </div>
+                            <h3>Classic Room</h3>
+                            <p>Classic Rooms provide a delightful refuge for those look for a combination of luxury & leisure.</p>
+                            <hr>
+                            <div class="content1_21">
+                                <p>$ 320.00 USD</p>
+                                <button>Book Now</button>
+                            </div>
+                        </div></div>
+                        <div class="content2">
+                            <div class="content2_1">
+                                <div class="content21">
+                                    <div class="content_card">
+                                        <p> 60m² (inc. terrace)</p><hr>
+                                        <p> 4 adults / 1 child</p><hr>
+                                        <p> Bunk Bed</p><hr>
+                                        <p>Ocean View</p>
+                                    </div>
+                                </div>
+                                <h3>Luxury Room</h3>
+                                <p>Luxury Rooms are precisely built to create a refuge of richness & comfort in the midst of paradise.</p>
+                                <hr>
+                                <div class="content2_11">
+                                    <p>$ 320.00 USD</p>
+                                    <button>Book Now</button>
+                                </div>
+                            </div>
+                            <div class="content2_2">
+                                <div class="content22">
+                                    <div class="content_card">
+                                        <p> 60m² (inc. terrace)</p><hr>
+                                        <p> 4 adults / 1 child</p><hr>
+                                        <p> Bunk Bed</p><hr>
+                                        <p>Ocean View</p>
+                                    </div>
+                                </div>
+                                <h3>Premium Room</h3>
+                                <p>Premium Rooms, created with discriminating travelers in mind, are a tribute to sophisticated living.</p>
+                                <hr>
+                                <div class="content2_21">
+                                    <p>$ 320.00 USD</p>
+                                    <button>Book Now</button>
+                                </div>
+                            </div></div>
+                            <div class="content3">
+                                <div class="content3_1">
+                                    <div class="content31">
+                                        <div class="content_card">
+                                            <p> 60m² (inc. terrace)</p><hr>
+                                            <p> 4 adults / 1 child</p><hr>
+                                            <p> Bunk Bed</p><hr>
+                                            <p>Ocean View</p>
+                                        </div></div>
+                                    <h3>Single Room</h3>
+                                    <p>Single Rooms provide a secluded and serene haven for single travellers seeking tranquilly & renewal.</p>
+                                    <hr>
+                                    <div class="content3_11">
+                                        <p>$ 320.00 USD</p>
+                                        <button>Book Now</button>
+                                    </div>
+                                </div>
+                                <div class="content3_2">
+                                    <div class="content32">
+                                        <div class="content_card">
+                                            <p> 60m² (inc. terrace)</p><hr>
+                                            <p> 4 adults / 1 child</p><hr>
+                                            <p> Bunk Bed</p><hr>
+                                            <p>Ocean View</p>
+                                        </div></div>
+                                    <h3>Budget Room</h3>
+                                    <p>Relax on comfy sleep & take use of contemporary comforts tailored to meet your travel requirements.</p>
+                                    <hr>
+                                    <div class="content3_21">
+                                        <p>$ 320.00 USD</p>
+                                        <button>Book Now</button>
+                                    </div>
+                                </div></div>
+                                </div>
+
+
+
+                                <div class="tab3">
+                                    <div class="content1">
+                                        <div class="content1_1">
+                                            <div class="content112">
+                                                <div class="content_card">
+                                                    <p> 60m² (inc. terrace)</p><hr>
+                                                    <p> 4 adults / 1 child</p><hr>
+                                                    <p> Bunk Bed</p><hr>
+                                                    <p>Ocean View</p>
+                                                </div>
+                                            </div>
+                                            <h3>Double Room</h3>
+                                            <p>A comfortable, roomy refuge for couples, friends, or anybody looking for a tranquil escaping.</p>
+                                            <hr>
+                                            <div class="content1_11">
+                                                <p>$ 320.00 USD</p>
+                                                <button>Book Now</button>
+                                            </div>
+                                        </div>
+                                        <div class="content1_2">
+                                            <div class="content12">
+                                                <div class="content_card">
+                                                    <p> 60m² (inc. terrace)</p><hr>
+                                                    <p> 4 adults / 1 child</p><hr>
+                                                    <p> Bunk Bed</p><hr>
+                                                    <p>Ocean View</p>
+                                                </div>
+                                            </div>
+                                            <h3>Classic Room</h3>
+                                            <p>Classic Rooms provide a delightful refuge for those look for a combination of luxury & leisure.</p>
+                                            <hr>
+                                            <div class="content1_21">
+                                                <p>$ 320.00 USD</p>
+                                                <button>Book Now</button>
+                                            </div>
+                                        </div></div>
+                                        <div class="content2">
+                                            <div class="content2_1">
+                                                <div class="content21">
+                                                    <div class="content_card">
+                                                        <p> 60m² (inc. terrace)</p><hr>
+                                                        <p> 4 adults / 1 child</p><hr>
+                                                        <p> Bunk Bed</p><hr>
+                                                        <p>Ocean View</p>
+                                                    </div>
+                                                </div>
+                                                <h3>Luxury Room</h3>
+                                                <p>Luxury Rooms are precisely built to create a refuge of richness & comfort in the midst of paradise.</p>
+                                                <hr>
+                                                <div class="content2_11">
+                                                    <p>$ 320.00 USD</p>
+                                                    <button>Book Now</button>
+                                                </div>
+                                            </div>
+                                            <div class="content2_2">
+                                                <div class="content22">
+                                                    <div class="content_card">
+                                                        <p> 60m² (inc. terrace)</p><hr>
+                                                        <p> 4 adults / 1 child</p><hr>
+                                                        <p> Bunk Bed</p><hr>
+                                                        <p>Ocean View</p>
+                                                    </div>
+                                                </div>
+                                                <h3>Premium Room</h3>
+                                                <p>Premium Rooms, created with discriminating travelers in mind, are a tribute to sophisticated living.</p>
+                                                <hr>
+                                                <div class="content2_21">
+                                                    <p>$ 320.00 USD</p>
+                                                    <button>Book Now</button>
+                                                </div>
+                                            </div></div>
+                                            <div class="content3">
+                                                <div class="content3_1">
+                                                    <div class="content31">
+                                                        <div class="content_card">
+                                                            <p> 60m² (inc. terrace)</p><hr>
+                                                            <p> 4 adults / 1 child</p><hr>
+                                                            <p> Bunk Bed</p><hr>
+                                                            <p>Ocean View</p>
+                                                        </div></div>
+                                                    <h3>Single Room</h3>
+                                                    <p>Single Rooms provide a secluded and serene haven for single travellers seeking tranquilly & renewal.</p>
+                                                    <hr>
+                                                    <div class="content3_11">
+                                                        <p>$ 320.00 USD</p>
+                                                        <button>Book Now</button>
+                                                    </div>
+                                                </div>
+                                                <div class="content3_2">
+                                                    <div class="content32">
+                                                        <div class="content_card">
+                                                            <p> 60m² (inc. terrace)</p><hr>
+                                                            <p> 4 adults / 1 child</p><hr>
+                                                            <p> Bunk Bed</p><hr>
+                                                            <p>Ocean View</p>
+                                                        </div></div>
+                                                    <h3>Budget Room</h3>
+                                                    <p>Relax on comfy sleep & take use of contemporary comforts tailored to meet your travel requirements.</p>
+                                                    <hr>
+                                                    <div class="content3_21">
+                                                        <p>$ 320.00 USD</p>
+                                                        <button>Book Now</button>
+                                                    </div>
+                                                </div></div>
+                                                </div>
+
+        <div class="content4">
+            <div class="content4_1">
+                <h2>Treat your taste buds to unparalleled flavors</h2>
+                <p>The eating experience provided is extraordinary, promising a one-of-a-kind and enjoyable sensory adventure. It means that the restaurant's cuisine is prepared with great care, originality, and attention to detail. The word emphasises the superb flavour and quality of the meal, luring customers to engage on an extraordinary gastronomic.</p>
+                <button>View Services</button>
+            </div>
+        </div>
+        <div class="content5">
+            <h1>Explore Our Gallery's</h1>
+            <marquee behavior="" direction="">
+                <img src="images/marquee1.jpg" alt="">
+                <img src="images/marqu.jpg" alt="">
+                <img src="images/marquee2.jpg" alt="">
+                <img src="images/marquee3.jpg" alt="">
+                <img src="images/marquee4.jpg" alt="">
+                <img src="images/marquee5.jpg" alt="">
+            </marquee>
+            <button id="btn1">Explore Rooms</button>
+            <button>Our Services</button>
+        </div>
+        <div class="newsletter">
+            <div class="news1">
+                <h1>DESTIN FLOW</h1>
+                <p>We provide travelers with a variety of amenities and <br>services tailored to
+                     meet their every need, assuring a<br> comfortable and enjoyable stay.</p>
+            </div>
+            <div class="news2">
+                <h1>Subscribe to our newsletter</h1>
+                <p>click here for the email newsletter form.</p>
+                <input type="email" id="input" placeholder="Please Enter Your Email">
+                <button id="btn">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</body>  
+<script>
+  let input = document.getElementById("input");
+let btn = document.getElementById("btn");
+
+btn.addEventListener("click", function() {
+    input.value = "Thank you! Your submission has been received!";
+    input.style.width = "400px";
+    input.style.backgroundColor = " rgb(77, 140, 182)";
+    input.style.fontSize = "16px";
+    input.style.textAlign = "center";
+    btn.style.display = "none";
+    input.style.color ="white";
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+
+let btn1 = document.querySelector('.bt1');
+let btn2 = document.querySelector('.bt2');
+let btn3 = document.querySelector('.bt3');
+
+let box1 = document.querySelector('.tab1');
+let box2 = document.querySelector('.tab2');
+let box3 = document.querySelector('.tab3');
+
+
+
+btn1.addEventListener("click", function() {
+    box1.style.display = 'block';
+    box2.style.display = 'none';
+    box3.style.display = 'none';
+});
+
+btn2.addEventListener("click", function() {
+    box1.style.display = 'none';
+    box2.style.display = 'block';
+    box3.style.display = 'none';
+});
+
+btn3.addEventListener("click", function() {
+    box1.style.display = 'none';
+    box2.style.display = 'none';
+    box3.style.display = 'block';
+});
+
+});
+
+</script>
+</html>
